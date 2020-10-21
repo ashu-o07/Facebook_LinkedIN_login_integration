@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TSF_social_media_integration</string>
+    <string name="facebook_app_id">802774366956581</string>
+    <string name="fb_login_protocol_scheme">fb802774366956581</string>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".Login">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tsf" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="300dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent" />
+
+            <View
+                android:id="@+id/divider21"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Login"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login"
+                    android:layout_width="240sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                </com.facebook.login.widget.LoginButton>
+
+                <View
+                    android:id="@+id/divider41"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <ImageView
+                    android:id="@+id/linkedIn"
+                    android:layout_width="200sp"
+                    android:layout_height="35sp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/signlin" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

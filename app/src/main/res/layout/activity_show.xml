@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Show">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:background="@color/dBlue" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_marginTop="150sp"
+            android:foregroundGravity="center"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/em"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:textAlignment="center"
+
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/lgout"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80sp"
+        android:text="Logout"
+        android:background="@color/lBlue"
+        android:textColor="@color/colorPrimary">
+
+    </Button>
+
+</LinearLayout>
